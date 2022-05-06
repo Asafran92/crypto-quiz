@@ -2,25 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="develop/style.css" />
-    <title>Document</title>
+    <title>Crypto Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css"
+      integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./develop/style.css" />
   </head>
-  <body>
-    <div id="timer">Time:</div>
-    <div id="welcome-page">
-      <h1>Welcome to XXXXquiz</h1>
-      <button id="enter">Enter</button>
+  <body class="flex-center">
+    <header class="container">
+      <h1>CryptoCurrency Quiz</h1>
+    </header>
+    <div id="btns">
+      <button id="start-btn" class="btn btn-primary">Start</button>
     </div>
-    <div id="questions" class="hide">
-      <p>Question #1</p>
-      <p>What is bitcoin</p>
-    </div>
-    <div id="test-results">
-      <h2 id="final-score">Your Score:</h2>
-    </div>
-
+    <section class="quiz-box hide">
+      <div id="timer"></div>
+      <div id="question"></div>
+      <ul id="option-list"></ul>
+      <div id="question-result"></div>
+    </section>
     <script src="./develop/script.js"></script>
   </body>
 </html>
